@@ -1,0 +1,24 @@
+The Finance Logger app is a simple TS app from the "The Net Ninja" youtube channel
+
+In this app we are gonna learn the TS structure and all variable types.
+In order to create this app :
+
+1. Install typescript on your computer using "npm install -g typescript" command which the "-g" referes to general instead of installing it in each new ts app
+
+2. Create an empty folder on your computer (I named mine "finance-logger")
+
+3. Create a "public" folder - Where we're gonna create the index.html file and the style.css file (the code can be copied from https://github.com/iamshaunjp/typescript-tutorial repository)
+
+4. Create a "src" folder - Where we're gonna create our app.ts file
+
+5. Before launching our app we need to initiate our ts compiler using "tsc init" command line (it will create the tsconfig.json file), after that to compile the app we can use "tsc app.ts" commande
+   This commande will automaticly generate an app.js file inside the public folder, which we did specif it inside the tsconfig.json file
+
+Inside the "src" folder we need to folders where we will define our classes and interfaces:
+
+1. Interfaces - Where we'll store our interface definitions, like IUser or IPerson. This way we can use them in other places of this app. In our case we only need a HasFormatter.ts file where we defined an interface with one function to controle the classes structure
+2. Classes - Where we'll store our classes definitions. In our app we need 3 Classes :
+   - Invoice and Payment. Which are the 2 type of our finance.
+   - ListTemplate classe, is the structure of rendered info after adding an invoice pr payment finance log
+
+Inside the "public" folder, the compiler will create a JS files for each TS file we create. To keep track on every change we made inside our TS files, we can use "tsc -w" commande line (the "w" referes to watch)
